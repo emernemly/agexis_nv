@@ -1,0 +1,152 @@
+.domaine {
+  display: flex !important;
+  width: 350px !important;
+  height: 550px;
+  position: relative;
+  flex-direction: column !important;
+  box-shadow: 14px 8px 16px 0px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 15px !important;
+  margin-bottom: 30px;
+  height: 586px;
+  img {
+    pointer-events: none;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    .card-text {
+      font-size: 20px;
+    }
+  }
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  ul {
+    color: #4a4848;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    li {
+      margin: 9px 0;
+      list-style: circle;
+    }
+  }
+}
+
+.all_carousel {
+  margin-bottom: 50px;
+
+  .rec-arrow:hover,
+  .rec-arrow:focus {
+    background: #d5d5d5 !important;
+    color: white;
+  }
+  .rec-carousel-wrapper {
+    max-width: 1400px;
+    margin: auto;
+  }
+
+  .title {
+    width: 45% !important;
+    display: flex;
+    flex-wrap: wrap;
+    h2 {
+      display: flex;
+      color: var(--clr-second);
+      position: relative;
+
+      height: 150px;
+
+      padding-bottom: 22px;
+    }
+    .svg {
+      svg {
+        position: absolute;
+
+        right: -10px;
+        top: 0;
+      }
+    }
+    svg {
+      width: 40px;
+      margin: 40px 5px 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1012px) {
+  .all_carousel {
+    .rec-carousel-wrapper {
+      max-width: 589px;
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .domaine {
+    width: 300px !important;
+    height: 542px;
+    button {
+      width: 170px;
+    }
+  }
+  .all_carousel {
+    .title {
+      text-align: start;
+      justify-content: flex-start;
+      h2 {
+        font-size: 37px;
+        margin: 0 0 0 12px;
+      }
+
+      svg {
+      }
+    }
+    .rec-arrow {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .domaine {
+    .card-body {
+      .card-title {
+        h4 {
+          font-size: 17px;
+        }
+      }
+    }
+    .card-text {
+      font-size: 12px;
+    }
+    button {
+      font-size: 10px;
+      width: 100px;
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .all_carousel {
+    .title {
+      h2 {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+// .rec-arrow:disabled,
+// .rec-arrow[disabled] {
+//   display: none;
+// }

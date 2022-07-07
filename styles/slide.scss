@@ -1,0 +1,58 @@
+.slide {
+  .carousel-indicators {
+    display: none;
+  }
+  .slide_1 {
+    background-image: url(./../components//assets/img/accueil_picture.jpg);
+  }
+  .slide_2 {
+    background-image: url(./../components//assets//img/technician-holding-solar-cell-eco-icon-solar-cell-system-min.jpg);
+  }
+  .slide_3 {
+    background-image: url(../components/assets/img/future-building.jpg);
+  }
+  .slideAll {
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 570px;
+    position: relative;
+  }
+  .slider-text {
+    max-width: 500px;
+    position: absolute;
+    left: 20%;
+    z-index: 10;
+    margin: 30px;
+    h1 {
+      font-size: 61px;
+      color: #41464b;
+    }
+    h3 {
+      margin: 15px 0;
+    }
+    button {
+      margin: 12px 0;
+    }
+  }
+}
+@media screen and (max-width: 646px) {
+  .slide {
+    .slideAll {
+      height: 400px;
+    }
+    .slider-text {
+      left: 10%;
+      margin: 10px;
+      h1 {
+        font-size: 10vw;
+      }
+      h2 {
+        font-size: 5vw;
+      }
+      button {
+        font-size: 3.4vw;
+      }
+    }
+  }
+}

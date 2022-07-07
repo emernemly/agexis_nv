@@ -1,0 +1,204 @@
+._container {
+  .container_expertise {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    .images {
+      width: 50%;
+      position: relative;
+      .bg {
+        position: absolute;
+        img {
+          height: auto;
+        }
+        width: 100%;
+      }
+      // .updown {
+      //   display: flex;
+      //   flex-direction: column;
+      //   justify-content: center;
+
+      //   width: 100%;
+      .up {
+        width: 100%;
+        justify-content: center;
+
+        display: flex;
+        .img {
+          width: 70%;
+          img {
+            display: flex !important;
+          }
+        }
+      }
+      .down {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        .img {
+          width: 60%;
+          margin-top: -30px;
+          height: auto !important;
+          span {
+            padding-top: 0 !important;
+          }
+          img {
+            position: relative !important;
+            height: auto !important;
+
+            width: 100% !important;
+          }
+        }
+      }
+    }
+
+    .expertise {
+      width: 50%;
+    }
+    .discreption {
+      .title {
+        margin-bottom: 17px;
+        width: max-content !important;
+        h2 {
+          color: var(--clr-second);
+          position: relative;
+          svg {
+            width: 30px;
+            position: absolute;
+            top: 0;
+            right: -10px;
+          }
+        }
+      }
+    }
+    .type-expetise {
+      display: flex;
+      flex-direction: column;
+      margin: 30px 0;
+      .type {
+        display: flex;
+        margin: 20px 0;
+        align-items: center;
+        .svg-content {
+          min-width: 150px;
+          text-align: center;
+          svg {
+            width: 100px;
+          }
+        }
+
+        .définition {
+          p {
+            margin: 8px 0;
+            font-size: 18px;
+            color: #afafaf;
+          }
+        }
+      }
+    }
+  }
+  .Num {
+    max-width: 100px;
+    max-height: 130px;
+    background-color: var(--clr-primary);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    font-size: 1vw;
+    padding: 5px;
+    z-index: 10;
+  }
+
+  .svg-fonc {
+    svg {
+      width: 80px;
+    }
+  }
+}
+.img {
+  display: flex;
+  img {
+    border-radius: 30px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  ._container {
+    .container_expertise {
+      flex-direction: column !important;
+      align-items: center;
+      .images {
+        width: 100% !important;
+      }
+      .expertise {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media screen and (max-width: 638px) {
+  .container_expertise {
+    padding: 12px 0;
+    .expertise {
+      .discreption {
+        margin-left: 12px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 499px) {
+  .container_expertise {
+    padding: 0;
+  }
+  .Num {
+    height: 89px !important;
+
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container_expertise {
+    .discreption {
+      .title {
+        h2 {
+          font-size: 37px;
+          text-align: center;
+        }
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+    .type-expetise {
+      .type {
+        .définition {
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 361px) {
+  .down {
+    .img {
+      margin-top: -10px !important;
+    }
+  }
+}
+@media screen and (max-width: 399px) {
+  .svg-content {
+    min-width: 93px !important;
+    svg {
+      width: 63px !important;
+    }
+  }
+}

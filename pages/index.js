@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <Header />
       <Slides />
-      <Conditions />
+      {/* <Conditions /> */}
       <Expertise />
       <Demarche />
       <Domaine />

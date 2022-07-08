@@ -11,7 +11,7 @@ import '../styles/ImgComarison.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

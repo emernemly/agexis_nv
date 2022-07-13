@@ -1,13 +1,37 @@
-._container {
+.expertise_container {
+  overflow: hidden;
   .container_expertise {
     display: flex;
+    align-items: center;
     flex-direction: row;
     gap: 100px;
     .images {
       width: 50%;
       position: relative;
+      height: fit-content;
       .bg {
         position: absolute;
+
+        left: 0;
+        top: -7%;
+        transform: translateY(-50%);
+        -webkit-animation-name: spin;
+        -webkit-animation-duration: 4000ms;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: spin;
+        -moz-animation-duration: 4000ms;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -ms-animation-name: spin;
+        -ms-animation-duration: 4000ms;
+        -ms-animation-iteration-count: infinite;
+        -ms-animation-timing-function: linear;
+
+        animation-name: spin;
+        animation-duration: 50000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
         img {
           height: auto;
         }
@@ -74,22 +98,19 @@
     .type-expetise {
       display: flex;
       flex-direction: column;
-      margin: 30px 0;
+
       .type {
         display: flex;
         margin: 20px 0;
         align-items: center;
         .svg-content {
-          min-width: 150px;
           text-align: center;
-          svg {
-            width: 100px;
-          }
+          width: 100px;
         }
 
         .définition {
+          margin-left: 20px;
           p {
-            margin: 8px 0;
             font-size: 18px;
             color: #afafaf;
           }
@@ -98,7 +119,6 @@
     }
   }
   .Num {
-    max-width: 100px;
     max-height: 130px;
     background-color: var(--clr-primary);
     color: white;
@@ -112,12 +132,12 @@
     font-size: 1vw;
     padding: 5px;
     z-index: 10;
+    width: 150px;
   }
 
   .svg-fonc {
-    svg {
-      width: 80px;
-    }
+    width: 75px !important;
+    margin-right: 5px;
   }
 }
 .img {
@@ -127,7 +147,7 @@
   }
 }
 @media screen and (max-width: 1199px) {
-  ._container {
+  .expertise_container {
     .container_expertise {
       flex-direction: column !important;
       align-items: center;
@@ -196,9 +216,38 @@
 }
 @media screen and (max-width: 399px) {
   .svg-content {
-    min-width: 93px !important;
-    svg {
-      width: 63px !important;
-    }
+    min-width: 54px !important;
+  }
+}
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

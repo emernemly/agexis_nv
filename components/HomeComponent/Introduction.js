@@ -1,0 +1,57 @@
+import React from 'react';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+const Introduction = () => {
+  return (
+    <section className='_container'>
+      <div className='container'>
+        <div className='introduction'>
+          <Row>
+            <Col xs={12} md={6}>
+              <div className='intro_text' data-aos='fade-right'>
+                <h2 className='heading-2'>Introduction</h2>
+                <p>
+                  <span style={{ fontWeight: 'bold', color: 'black' }}>
+                    AGEXIS
+                  </span>{' '}
+                  est un bureau d’études techniques spécialiste du bâtiment qui
+                  réunit une équipe polyvalente capable de piloter tous projets
+                  de construction simples ou d’envergure. Nos ingénieurs et
+                  techniciens vous assistent, sur chaque nouveau projet, en
+                  alliant responsabilité, réactivité et professionnalisme propre
+                  à une entreprise à taille humaine.
+                </p>{' '}
+                <br />
+                <p>
+                  <span style={{ fontWeight: 'bold', color: 'black' }}>
+                    AGEXIS
+                  </span>{' '}
+                  met à disposition de ses Maîtres d’Ouvrage des solutions
+                  techniques performantes de conception et de réalisation
+                  globale de leurs projets tant sur la partie technique,
+                  économique que fonctionnelle.
+                </p>
+              </div>{' '}
+            </Col>
+            <Col xs={12} md={6}>
+              {' '}
+              <div className='intro_video' data-aos='zoom-in'>
+                <iframe
+                  width='560'
+                  height='315'
+                  src='https://www.youtube.com/embed/3hJFDUes_f8'
+                  title='YouTube video player'
+                  frameborder='0'
+                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </Col>
+          </Row>{' '}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Introduction;

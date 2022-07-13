@@ -1,26 +1,21 @@
 .demarch_container {
   background-color: rgba(221, 224, 229, 0.2);
-  padding: 10px 0;
+
   .demarche {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    .title {
-      margin-bottom: 60px;
-      color: var(--clr-second);
-      width: max-content !important;
-      h2 {
-        transform: translateX(-145px);
-        position: relative;
-        svg {
-          width: 30px;
-          position: absolute;
-          right: -10px;
-          top: 0;
-        }
+
+    h2 {
+      position: relative;
+      svg {
+        width: 30px;
+        position: absolute;
+        right: -10px;
+        top: 0;
       }
     }
+
     .all-demarche {
       display: flex;
       flex-direction: row;
@@ -124,10 +119,9 @@
         }
       }
     }
-    .title {
-      h2 {
-        transform: translateX(0);
-      }
+
+    h2 {
+      transform: translateX(0);
     }
   }
 }

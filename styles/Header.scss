@@ -65,6 +65,9 @@
   //   content: '';
   //   background-image: url('../../assets/img/background.jpg');
   // }
+  a {
+    width: 150px;
+  }
   .contact {
     display: flex;
     .contact-icon {
@@ -111,12 +114,12 @@
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1015px) {
   .header-nav a {
     padding: 9px 13px;
   }
 }
-@media screen and (max-width: 914px) {
+@media screen and (max-width: 935px) {
   .navbar-items {
     display: none;
   }

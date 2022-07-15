@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import expertise_pic_up from '../assets/img/expertise_pic_up.png';
-import expertise_pic_down from '../assets/img/expertise_pic_down.png';
-import roue_expertise from '../assets/img/roue_expertise.png';
+import expertise_pic_up from '../../public/img/expertise_pic_up-min.webp';
+import expertise_pic_down from '../../public/img/expertise_pic_down-min.webp';
+import roue_expertise from '../../public/img/roue_expertise-min.webp';
 
-import Fonctionelle from '../../public/img/fonctionelle.png';
-import Technique from '../../public/img/technique.png';
-import Travers from '../../public/img/travers.png';
+import Fonctionelle from '../../public/img/fonctionelle.webp';
+import Technique from '../../public/img/technique.webp';
+import Travers from '../../public/img/travers.webp';
 
 import Image from 'next/image';
 const Expertise = () => {

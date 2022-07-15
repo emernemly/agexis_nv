@@ -1,6 +1,9 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import work from '../../public/imgQsn/construction-engineer.webp';
+import Image from 'next/image';
+import Module from '../Module';
 const Introduction = () => {
   return (
     <section className='_container'>
@@ -36,15 +39,10 @@ const Introduction = () => {
             <Col xs={12} md={6}>
               {' '}
               <div className='intro_video' data-aos='zoom-in'>
-                <iframe
-                  width='560'
-                  height='315'
-                  src='https://www.youtube.com/embed/3hJFDUes_f8'
-                  title='YouTube video player'
-                  frameborder='0'
-                  allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                  allowfullscreen
-                ></iframe>
+                <div className='imge'>
+                  {' '}
+                  <Image src={work} alt='video' /> <Module />
+                </div>
               </div>
             </Col>
           </Row>{' '}

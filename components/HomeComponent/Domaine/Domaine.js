@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import CardDomaine from './CardDomaine';
 import Carousel from 'react-elastic-carousel';
-import batiment_habitation from '../../assets/img/batiment_habitation.png';
-import batiment_fonctionelle from '../../assets/img/batiment_fonctionelle.png';
-import batiment_industruelle from '../../assets/img/batiment_industruelle.png';
+import batiment_habitation from '../../../public/img/batiment_habitation-min.webp';
+import batiment_fonctionelle from '../../../public/img/batiment_fonctionelle-min.webp';
+import batiment_industruelle from '../../../public/img/batiment_industruelle-min.webp';
 
 function Domaine() {
   const breakPoints = [

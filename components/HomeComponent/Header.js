@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Offcanvas } from 'react-bootstrap';
@@ -12,39 +12,55 @@ import linkid from '../../public/img/linkid.webp';
 import search from '../../public/img/search.webp';
 import { BsList } from 'react-icons/bs';
 import LogoWhite from '../../public/img/logo_agexis_blanc.webp';
+import { useRouter } from 'next/router';
 const Header = () => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const [hidden, sethidden] = useState(false);
+
+  useEffect(() => {
+    const element = document.querySelector('.header');
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        element.classList.add('hide_nav');
+      } else {
+        element.classList.remove('hide_nav');
+      }
+    });
+  }, []);
+  const router = useRouter();
   return (
     <div className='header'>
-      <div className='header-top'>
-        {/* <div className='background'></div> */}
-        <Link href='/'>
-          <a>
-            <Image
-              className='logo-original'
-              src={LogoBlue}
-              alt='Logo agexis bureau etude france'
-            />
-          </a>
-        </Link>
-        <div className='contact'>
-          <div className='contact-icon phone'>
-            <Image src={phone} alt='phone' />
-            <p>01 84 03 98 29</p>
-          </div>
-          <div className='contact-icon mail'>
-            <Image src={mail} alt='mail' />
-            <p>CONTACT@AGEXIS.COM</p>
-          </div>
-          <div className='contact-icon social'>
-            <Image src={facebook} alt='facebook' />
-            <Image src={twiter} alt='twiter' />
-            <Image src={youtube} alt='youtube' />
-            <Image src={linkid} alt='linkid' />
-            <Image src={search} alt='search' className='search' />
+      <div className='fixed'>
+        <div className='header-top'>
+          {/* <div className='background'></div> */}
+          <Link href='/'>
+            <a>
+              <Image
+                className='logo-original'
+                src={LogoBlue}
+                alt='Logo agexis bureau etude france'
+              />
+            </a>
+          </Link>
+          <div className='contact'>
+            <div className='contact-icon phone'>
+              <Image src={phone} alt='phone' />
+              <p>01 84 03 98 29</p>
+            </div>
+            <div className='contact-icon mail'>
+              <Image src={mail} alt='mail' />
+              <p>CONTACT@AGEXIS.COM</p>
+            </div>
+            <div className='contact-icon social'>
+              <Image src={facebook} alt='facebook' />
+              <Image src={twiter} alt='twiter' />
+              <Image src={youtube} alt='youtube' />
+              <Image src={linkid} alt='linkid' />
+              <Image src={search} alt='search' className='search' />
+            </div>
           </div>
         </div>
       </div>
@@ -59,11 +75,23 @@ const Header = () => {
           </Offcanvas.Header>
           <Offcanvas.Body>
             <div className=' sidebar-items'>
-              <Link href='/' onClick={handleClose}>
-                Accueil
+              <Link href='/'>
+                <a
+                  className={router.pathname == '/' ? 'active' : ''}
+                  onClick={handleClose}
+                >
+                  Accueil
+                </a>
               </Link>
-              <Link href='/qsn' onClick={handleClose}>
-                Qui sommes-nous
+              <Link href='/quiSommesNous'>
+                <a
+                  onClick={handleClose}
+                  className={
+                    router.pathname == '/quiSommesNous' ? 'active' : ''
+                  }
+                >
+                  Qui sommes-nous
+                </a>
               </Link>
               <Link href='/activite' onClick={handleClose}>
                 Activité
@@ -89,8 +117,14 @@ const Header = () => {
       </>
       <div className='header-nav'>
         <div className='navbar-items'>
-          <Link href='/'>Accueil</Link>
-          <Link href='/qsn'>Qui sommes-nous</Link>
+          <Link href='/'>
+            <a className={router.pathname == '/' ? 'active' : ''}>Accueil</a>
+          </Link>
+          <Link href='/quiSommesNous'>
+            <a className={router.pathname == '/quiSommesNous' ? 'active' : ''}>
+              Qui sommes-nous
+            </a>
+          </Link>
           <Link href='/activite'>Activité</Link>
           <Link href='/marche'>Marché</Link>
           <Link href='/acualite'>Actualité</Link>

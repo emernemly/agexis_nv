@@ -15,7 +15,12 @@ import '../styles/Coordonnées.scss';
 import '../styles/Footer.scss';
 import '../styles/Information.scss';
 import '../styles/Introduction.scss';
+import '../styles/qsmStyle/Présentation.scss';
+import '../styles/qsmStyle/NosValeurs.scss';
+import '../styles/qsmStyle/NotreDémarche.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from '../components/HomeComponent/Header';
+
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -29,6 +34,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <ScrollUp />
+      <Header />
       <Component {...pageProps} />
       <Footer />
     </>

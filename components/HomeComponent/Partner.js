@@ -1,9 +1,9 @@
 import React from 'react';
 import Carousel from 'react-elastic-carousel';
-import Paris from '../../public/img/logo_pari.png';
-import Parc from '../../public/img/logo_parc.png';
-import ISG from '../../public/img/logo_svg.png';
-import Opera from '../../public/img/logo_opera.png';
+import Paris from '../../public/img/logo_pari-min.webp';
+import Parc from '../../public/img/logo_parc-min.webp';
+import ISG from '../../public/img/logo_svg-min.webp';
+import Opera from '../../public/img/logo_opera-min.webp';
 import Image from 'next/image';
 const Partner = () => {
   const breakPoints = [

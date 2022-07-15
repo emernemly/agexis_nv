@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Image from 'next/image';
-import demarche from '../assets/img/demarche_new_pic.png';
+import demarche from '../../public/img/demarche_new_pic-min.webp';
 
 import LogoBlue from '../../public/img/logo_agexis.webp';
 
@@ -11,7 +11,6 @@ const Demarche = () => {
         {' '}
         <div>
           <h2 className='heading-2'>Notre Démarche</h2>
-          <br />
         </div>
         <div className='all-demarche' data-aos='fade-right'>
           <div className='left-demarche'>
@@ -36,8 +35,9 @@ const Demarche = () => {
             </div>
           </div>
           <div className='demarche-image'>
-            <Image src={demarche} alt='demarche_pic.png' />
-
+            <div className='img'>
+              <Image src={demarche} alt='demarche_pic.png' />
+            </div>
             <div className='demarche-description'>
               <div className='date'>2015-2022</div>
               <Image

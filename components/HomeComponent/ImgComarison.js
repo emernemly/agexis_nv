@@ -15,11 +15,14 @@ const ImgComarison = () => {
           <div className='comparision' data-aos='zoom-in'>
             <ReactCompareSlider
               itemOne={
-                <ReactCompareSliderImage src='/img/Bend-.jpg' alt='Image one' />
+                <ReactCompareSliderImage
+                  src='/img/Bend--min.webp'
+                  alt='Image one'
+                />
               }
               itemTwo={
                 <ReactCompareSliderImage
-                  src='/img/iStock.jpg'
+                  src='/img/iStock-min.webp'
                   alt='Image two'
                 />
               }
@@ -28,11 +31,14 @@ const ImgComarison = () => {
           <div className='comparision' data-aos='zoom-in'>
             <ReactCompareSlider
               itemOne={
-                <ReactCompareSliderImage src='/img/Bend-.jpg' alt='Image one' />
+                <ReactCompareSliderImage
+                  src='/img/Bend--webp.jpg'
+                  alt='Image one'
+                />
               }
               itemTwo={
                 <ReactCompareSliderImage
-                  src='/img/iStock.jpg'
+                  src='/img/iStock-min.webp'
                   alt='Image two'
                 />
               }

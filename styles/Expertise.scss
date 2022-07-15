@@ -149,7 +149,7 @@
 @media screen and (max-width: 1199px) {
   .expertise_container {
     .container_expertise {
-      flex-direction: column !important;
+      flex-direction: column-reverse !important;
       align-items: center;
       .images {
         width: 100% !important;

@@ -23,7 +23,7 @@ const Header = () => {
   useEffect(() => {
     const element = document.querySelector('.header');
     window.addEventListener('scroll', () => {
-      if (window.pageYOffset > 300) {
+      if (window.pageYOffset > 100) {
         element.classList.add('hide_nav');
       } else {
         element.classList.remove('hide_nav');

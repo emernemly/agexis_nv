@@ -8,7 +8,7 @@ import batiment_industruelle from '../../../public/img/batiment_industruelle-min
 function Domaine() {
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
-    { width: 600, itemsToShow: 2 },
+    { width: 400, itemsToShow: 2 },
     { width: 1000, itemsToShow: 3 },
   ];
   const domaines = [

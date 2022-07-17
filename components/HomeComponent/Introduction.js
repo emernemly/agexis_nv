@@ -12,7 +12,7 @@ const Introduction = () => {
           <Row>
             <Col xs={12} md={6}>
               <div className='intro_text' data-aos='fade-right'>
-                <h2 className='heading-2'>Introduction</h2>
+                <h2 className='heading-2'>Présentation</h2>
                 <p>
                   <span style={{ fontWeight: 'bold', color: 'black' }}>
                     AGEXIS
@@ -24,12 +24,9 @@ const Introduction = () => {
                   alliant responsabilité, réactivité et professionnalisme propre
                   à une entreprise à taille humaine.
                 </p>{' '}
-                <br />
                 <p>
-                  <span style={{ fontWeight: 'bold', color: 'black' }}>
-                    AGEXIS
-                  </span>{' '}
-                  met à disposition de ses Maîtres d’Ouvrage des solutions
+                 
+                  On met à disposition de ses Maîtres d’Ouvrage des solutions
                   techniques performantes de conception et de réalisation
                   globale de leurs projets tant sur la partie technique,
                   économique que fonctionnelle.

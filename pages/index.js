@@ -9,6 +9,8 @@ import Partner from '../components/HomeComponent/Partner';
 import Information from '../components/HomeComponent/Information';
 import Introduction from '../components/HomeComponent/Introduction.js';
 import Head from 'next/head';
+import Icons from '../components/HomeComponent/Icons';
+import Maps from '../components/Footer/Maps';
 export default function Home() {
   return (
     <div className='_home'>
@@ -20,13 +22,15 @@ export default function Home() {
       {/* <Information /> */}
       {/* <Conditions /> */}
       <Introduction />
+      <Icons />
       <Expertise />
-      <Demarche />
+      {/* <Demarche /> */}
       <Domaine />
       <ImgComarison />
       <Actualités />
       <Devis />
       <Partner />
+      <Maps /> 
     </div>
   );
 }

@@ -9,7 +9,7 @@ function Domaine() {
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 400, itemsToShow: 2 },
-    { width: 1000, itemsToShow: 3 },
+    { width: 800, itemsToShow: 3 },
   ];
   const domaines = [
     {
@@ -37,13 +37,11 @@ function Domaine() {
       title: 'Batiments industruelle',
       description: [
         ' Unités de stockage',
-        `Bâtiments industriels / Locaux techniques usines, stations${(
-          <br />
-        )}d’épuration, entrepôts et hangars`,
+        `Bâtiments industriels / Locaux techniques usines, stations
+        d’épuration, entrepôts et hangars`,
         'Centres d’exploitation routière',
-        ` Centres de secours, déchetterie…${(
-          <br />
-        )} Bureaux Restauration / Hôtellerie / Centres de vacances`,
+        ` Centres de secours, déchetterie…
+        Bureaux Restauration / Hôtellerie / Centres de vacances`,
       ],
     },
     {
@@ -100,6 +98,7 @@ function Domaine() {
           pagination={false}
           itemsToShow={3}
           breakPoints={breakPoints}
+          itemPadding={[10, 10]}
         >
           {domaines.map((domaine, index) => (
             <CardDomaine key={index} domaine={domaine} />

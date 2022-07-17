@@ -1,19 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
 @font-face {
   font-family: 'nexa_bold';
   src: local('nexa_bold'),
     url(./../components//assets/font/Nexa-Bold.woff) format('woff');
 }
+
 :root {
   --clr-second: #bb2431;
   --clr-primary: #1c2c4e;
   --txt-title: clamp(30px, 3vw, 100px);
   --pdg-box: 0px 4%;
 }
+
+.row {
+  margin: auto !important;
+}
+
 body {
   // overflow: overlay;
   font-family: 'Montserrat', sans-serif !important;
 }
+
+.grey {
+  background: #f5f5f5;
+}
+
 p,
 h1,
 h2,
@@ -25,32 +37,41 @@ h4 {
   display: flex;
   align-items: center;
 }
+
 #__next {
   margin-top: 145px;
 }
+
 p {
   font-size: 20px;
 }
+
 section {
   padding: 50px 15px;
 }
+
 img {
   pointer-events: none !important;
 }
+
 input {
   outline: none;
 }
+
 input:focus {
   border: 0;
   outline: none;
 }
+
 button {
   border: none;
   outline: none;
 }
+
 button:active {
   opacity: 0.7;
 }
+
 .primary-btn {
   background-color: var(--clr-primary);
   color: white;
@@ -58,6 +79,7 @@ button:active {
   padding: 10px 19px;
   border-radius: 10px;
 }
+
 .second-btn {
   background-color: var(--clr-second);
   color: white;
@@ -74,6 +96,7 @@ button:active {
   margin-bottom: 25px !important;
   font-weight: 600;
 }
+
 .heading-2::after {
   content: '';
   position: absolute;
@@ -108,6 +131,52 @@ button:active {
   min-height: 100vh;
   overflow: hidden;
 }
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 100%;
+}
+iframe{
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 100%;
+}
+
+._icons {
+  .icon {
+    cursor: pointer;
+    transition: 0.3s;
+    filter: opacity(1);
+    transform: scale(0.9);
+
+    img {
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  .icon:hover {
+
+    filter: opacity(0.7);
+    transform: scale(1);
+  }
+}
+
 // .content-app {
 //
 // }
@@ -123,12 +192,19 @@ button:active {
   background-color: var(--clr-primary) !important;
   box-shadow: 0 0 1px 3px var(--clr-primary) !important;
 }
+
 @media screen and (max-width: 935px) {
+  .container {
+    max-width: 900px !important;
+  }
+
   #__next {
     margin-top: 60px;
   }
 }
+
 @media screen and (max-width: 425px) {
+
   // h2 {
   //   font-size: 30px !important;
   // }

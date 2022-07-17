@@ -11,8 +11,8 @@ import Image from 'next/image';
 const Expertise = () => {
   return (
     <section className='expertise_container '>
-      <div className='container_expertise container ' data-aos='fade-right'>
-        <div className='images'>
+      <div className='container_expertise container row' data-aos='fade-right'>
+        <div className='images col-xs-12 col-md-6'>
           <div className='bg'>
             <Image className='roue' src={roue_expertise} alt='roue_expertise' />
           </div>
@@ -40,7 +40,7 @@ const Expertise = () => {
             </div>
           </div>
         </div>
-        <div className='expertise'>
+        <div className='expertise col-xs-12 col-md-6'>
           <div className='discreption'>
             <div>
               <h2 className='heading-2'>Nos Expertises</h2>

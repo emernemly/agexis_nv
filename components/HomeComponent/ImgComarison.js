@@ -16,13 +16,13 @@ const ImgComarison = () => {
             <ReactCompareSlider
               itemOne={
                 <ReactCompareSliderImage
-                  src='/img/Bend--min.webp'
+                  src='/img/references/Complexe-sportif-Clamart.jpg'
                   alt='Image one'
                 />
               }
               itemTwo={
                 <ReactCompareSliderImage
-                  src='/img/iStock-min.webp'
+                  src='/img/references/complexe-after.jpg'
                   alt='Image two'
                 />
               }
@@ -32,13 +32,13 @@ const ImgComarison = () => {
             <ReactCompareSlider
               itemOne={
                 <ReactCompareSliderImage
-                  src='/img/Bend--webp.jpg'
+                  src='/img/references/Vigneux-Sur-Seine-avant.jpg'
                   alt='Image one'
                 />
               }
               itemTwo={
                 <ReactCompareSliderImage
-                  src='/img/iStock-min.webp'
+                  src='/img/references/Vigneux-Sur-Seine-apres.jpg'
                   alt='Image two'
                 />
               }
@@ -49,7 +49,7 @@ const ImgComarison = () => {
       </div>{' '}
       <Link href='/'>
         <div>
-          <button className='primary-btn '>Lire la suite {'>'}</button>{' '}
+          <button className='primary-btn '>Voir plus {'>'}</button>{' '}
         </div>
       </Link>
     </section>

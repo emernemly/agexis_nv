@@ -13,8 +13,7 @@
 
   .Actualites-contant {
     display: flex !important;
-    width: 380px !important;
-    height: 480px;
+    
     flex-direction: column !important;
     margin-bottom: 30px;
     margin: 10px !important;
@@ -27,11 +26,10 @@
       cursor: pointer;
     }
     .info {
-      position: absolute;
+      margin-top: 30px;
       display: flex;
       justify-content: space-between;
-      width: 90%;
-      bottom: 1%;
+   
       color: #4a4848;
       .date {
         display: inline;
@@ -82,17 +80,13 @@
   }
 }
 @media screen and (max-width: 1012px) {
-  .actualites {
-    .rec-carousel-wrapper {
-      max-width: 599px;
-    }
-  }
+  
 }
 
 @media screen and (max-width: 450px) {
   .actualites {
     .Actualites-contant {
-      width: 248px !important;
+     
       height: 409px;
       .info {
         font-size: 12px;

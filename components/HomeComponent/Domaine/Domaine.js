@@ -89,7 +89,7 @@ function Domaine() {
   const size = useWindowSize();
 
   return (
-    <section>
+    <section className='grey'>
       <div className='all_carousel container' data-aos='fade-up'>
         <h2 className='heading-2'>Domaines D'interventions</h2>
         <br />

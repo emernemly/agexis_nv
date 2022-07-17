@@ -6,7 +6,7 @@ import {
 import Link from 'next/link';
 const ImgComarison = () => {
   return (
-    <section className='allcomparision'>
+    <section className='allcomparision grey'>
       <div className='container'>
         {' '}
         <h2 className='heading-2'>Réferences</h2>
@@ -51,7 +51,7 @@ const ImgComarison = () => {
       </div>{' '}
       <Link href='/'>
         <div>
-          <button className='primary-btn '>Voir plus {'>'}</button>{' '}
+          <button className='primary-btn '>Voir plus</button>{' '}
         </div>
       </Link>
     </section>

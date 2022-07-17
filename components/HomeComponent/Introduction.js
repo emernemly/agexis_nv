@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Module from '../Module';
 const Introduction = () => {
   return (
-    <section className='_container'>
+    <section className='_container pt-0'>
       <div className='container'>
         <div className='introduction'>
           <Row>

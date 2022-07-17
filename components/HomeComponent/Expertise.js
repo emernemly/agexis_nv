@@ -12,12 +12,10 @@ const Expertise = () => {
   return (
     <section className='expertise_container '>
       <div className='container_expertise container row' data-aos='fade-right'>
-     
+      <h2 className='heading-2'>Nos Expertises</h2>
         <div className='expertise col-xs-12 col-md-6'>
           <div className='discreption'>
-            <div>
-              <h2 className='heading-2'>Nos Expertises</h2>
-            </div>
+            
             <p>
               De la définition du process jusqu'a la livraison des
               batiments.nous mettons nos connaissances et nos compétences a

@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import CardDomaine from './CardDomaine';
 import Carousel from 'react-elastic-carousel';
-import batiment_habitation from '../../../public/img/batiment_habitation-min.webp';
-import batiment_fonctionelle from '../../../public/img/batiment_fonctionelle-min.webp';
-import batiment_industruelle from '../../../public/img/batiment_industruelle-min.webp';
+import batiment_habitation from '../../../public/img/Batiment-habitation.jpg';
+import batiment_fonctionelle from '../../../public/img/Batiments-fonctionnel.jpg';
+import batiment_industruelle from '../../../public/img/industriel.jpg';
+import VRD from '../../../public/img/VRD.jpg';
 
 function Domaine() {
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
-    { width: 400, itemsToShow: 2 },
+    { width: 600, itemsToShow: 2 },
     { width: 800, itemsToShow: 3 },
   ];
   const domaines = [
@@ -16,42 +17,28 @@ function Domaine() {
       image: batiment_habitation,
       title: "Batiments d'habitation",
       description: [
-        'Maisons individuelles',
-        'Appartements Bâtiments',
-        'D’habitation collectifs',
-        'Logements sociaux',
+        "Conception, construction ou réhabilitation de bâtiments d’habitation, maisons individuelles neuves, logements collectifs et sociaux."
       ],
     },
     {
       image: batiment_fonctionelle,
       title: 'Batiments fonctionelle',
       description: [
-        'Immeubles Grande Hauteur (IGH) et immeubles de Très',
-        'Grande Hauteur (ITGHI)',
-        'Bâtiments administratifs',
-        'Bâtiments d’enseignement...',
+        "Construction et réhabilitation d’ouvrages fonctionnels : scolaires, culturels, sportifs et  établissements hospitaliers et hôteliers."
       ],
     },
     {
       image: batiment_industruelle,
       title: 'Batiments industruelle',
       description: [
-        ' Unités de stockage',
-        `Bâtiments industriels / Locaux techniques usines, stations
-        d’épuration, entrepôts et hangars`,
-        'Centres d’exploitation routière',
-        ` Centres de secours, déchetterie…
-        Bureaux Restauration / Hôtellerie / Centres de vacances`,
+        "Construction simple ou complexe d’unités de production, de commerces et de bâtiments industriels alliant technicité et performance."
       ],
     },
     {
-      image: batiment_industruelle,
+      image: VRD,
       title: 'Infrastructures, ouvrages d’art, et VRD',
       description: [
-        'Unités de stockage',
-        '  Bâtiments industriels / Locaux techniques usines, stations d’épuration, entrepôts et hangars',
-        'Centres d’exploitation routière',
-        ' Centres de secours, déchetterie… Bureaux Restauration / Hôtellerie / Centres de vacances',
+        "Projets à grande envergure de construction et de restructuration des infrastructures, ouvrages d’Art, voiries et réseaux divers."
       ],
     },
   ];
@@ -89,7 +76,7 @@ function Domaine() {
   const size = useWindowSize();
 
   return (
-    <section className='grey'>
+    <section className=''>
       <div className='all_carousel container' data-aos='fade-up'>
         <h2 className='heading-2'>Domaines D'interventions</h2>
         <br />

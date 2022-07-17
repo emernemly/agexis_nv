@@ -2,7 +2,7 @@ import React from 'react'
 
 function Icons() {
   return (
-   <section className='grey _icons'>
+   <section className='_icons'>
     <div className="container">
         <div className="row justify-content-center">
             <div className="col-2 icon">

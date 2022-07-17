@@ -5,25 +5,30 @@
   flex-direction: column !important;
   border-radius: 15px !important;
   margin-bottom: 30px;
-  height: 586px;
+  min-height: 400px;
   img {
     pointer-events: none;
+  }
+  .card-title{
+    h3{
+      font-size: 20px;
+    }
   }
   .card-body {
     display: flex;
     flex-direction: column;
     .card-text {
-      font-size: 20px;
+      p{
+        font-size: 17px;
+      }
     }
   }
   button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   margin-left: auto;
     height: 40px;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+     display:flex;
+     align-items: center;
+    width: fit-content;
   }
 
   ul {

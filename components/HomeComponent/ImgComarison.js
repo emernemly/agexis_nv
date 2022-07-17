@@ -27,6 +27,7 @@ const ImgComarison = () => {
                 />
               }
             />
+                <p className='title-ref'>Complexe sportif – Clamart</p>
           </div>
           <div className='comparision' data-aos='zoom-in'>
             <ReactCompareSlider
@@ -43,6 +44,7 @@ const ImgComarison = () => {
                 />
               }
             />
+         <p className='title-ref'>68 logements et 20 foyers</p>
           </div>
         </div>
         <br />

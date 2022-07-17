@@ -47,7 +47,7 @@ p {
 }
 
 section {
-  padding: 50px 15px;
+  padding: 50px 20px !important;
 }
 
 img {
@@ -200,6 +200,9 @@ iframe{
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+  .expertise {
+    padding-left: 0 !important;
+}
 
   #__next {
     margin-top: 60px;

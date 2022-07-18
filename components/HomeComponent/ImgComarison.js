@@ -32,7 +32,7 @@ const ImgComarison = () => {
             <ReactCompareSlider
               itemOne={
                 <ReactCompareSliderImage
-                  src='/img/Bend--webp.jpg'
+                  src='/img/Bend--min.webp'
                   alt='Image one'
                 />
               }

@@ -6,7 +6,7 @@ const Slides = () => {
     <div>
       <Carousel fade>
         <Carousel.Item className='carousel-slider slider-1'>
-          <div className='slider-text'>
+          <div className='slider-text' data-aos='fade-up'>
             <h1>
               Bureau d'étude <br /> pludisciplinaire
             </h1>

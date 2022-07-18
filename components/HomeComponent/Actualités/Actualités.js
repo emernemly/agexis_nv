@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Carousel from 'react-elastic-carousel';
 
 import CardActualites from './CardActualites';
@@ -34,25 +34,19 @@ const Actualités = () => {
     { width: 600, itemsToShow: 2 },
     { width: 1000, itemsToShow: 3 },
   ];
-  //show pagination
-  // const [windowDimenion, setdetectHW] = useState({
-  //   winWidth: window.innerWidth,
-  //   winHeight: window.innerHeight,
-  // });
-  // const detectSize = () => {
-  //   setdetectHW({
-  //     winWidth: window.innerWidth,
-  //     winHeight: window.innerHeight,
-  //   });
-  // };
-  // useEffect(() => {
-  //   window.addEventListener('resize', detectSize);
 
-  //   return () => {
-  //     window.removeEventListener('resize', detectSize);
-  //   };
-  // }, [windowDimenion]);
+  const [width, SetWidth] = useState('');
 
+  const UpdateDimensions = () => {
+    SetWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    SetWidth(window.innerWidth);
+    window.addEventListener('resize', UpdateDimensions);
+    return () => {
+      window.removeEventListener('resize', UpdateDimensions);
+    };
+  }, []);
   return (
     <section>
       {' '}
@@ -62,8 +56,8 @@ const Actualités = () => {
         <br />
         <Carousel
           breakPoints={breakPoints}
-          // showArrows={windowDimenion.winWidth < 1013 ? false : true}
-          pagination={false}
+          showArrows={width <= 523 ? false : true}
+          pagination={width <= 523 ? true : false}
           itemsToShow={3}
         >
           {data.map((el, i) => (

@@ -20,7 +20,7 @@ const CardActualites = ({ el }) => {
             </div>
             <Link href='/'>
               <div>
-                <a>Lire la suite {'>'}</a>{' '}
+                <a>Lire la suite</a>{' '}
               </div>
             </Link>
           </div>

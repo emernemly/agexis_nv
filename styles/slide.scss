@@ -19,7 +19,7 @@
     max-width: 1000px;
     width: 100%;
     h1 {
-      font-size: clamp(14px, 7vw, 70px) !important;
+      font-size: clamp(14px, 7vw, 50px) !important;
       font-weight: 700;
       color: #41464b;
       margin-bottom: 15px !important;
@@ -36,6 +36,10 @@
 .slider-1 {
   width: 100%;
   background-image: url('../public/img/future-building-construction-engineering-project.webp');
+}
+.slider-0 {
+  width: 100%;
+  background-image: url('/img/sliders/slider-1.jpg');
 }
 .carousel-control-next-icon,
 .carousel-control-prev-icon {

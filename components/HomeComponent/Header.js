@@ -10,6 +10,7 @@ import twiter from '../../public/img/twiter.webp';
 import youtube from '../../public/img/youtube.webp';
 import linkid from '../../public/img/linkid.webp';
 import search from '../../public/img/search.webp';
+import { AiOutlineSearch } from 'react-icons/ai';
 import { BsList } from 'react-icons/bs';
 import LogoWhite from '../../public/img/logo_agexis_blanc.webp';
 import { useRouter } from 'next/router';
@@ -19,14 +20,17 @@ const Header = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const [hidden, sethidden] = useState(false);
-
+  const [search, setsearch] = useState(false);
   useEffect(() => {
     const element = document.querySelector('.header');
+    const nav = document.querySelector('.header-nav');
     window.addEventListener('scroll', () => {
-      if (window.pageYOffset > 300) {
+      if (window.pageYOffset > 100) {
         element.classList.add('hide_nav');
+        nav.classList.add('nav-opacity');
       } else {
         element.classList.remove('hide_nav');
+        nav.classList.remove('nav-opacity');
       }
     });
   }, []);
@@ -59,7 +63,7 @@ const Header = () => {
               <Image src={twiter} alt='twiter' />
               <Image src={youtube} alt='youtube' />
               <Image src={linkid} alt='linkid' />
-              <Image src={search} alt='search' className='search' />
+              {/* <Image src={search} alt='search' className='search' /> */}
             </div>
           </div>
         </div>
@@ -130,7 +134,13 @@ const Header = () => {
           <Link href='/acualite'>Actualité</Link>
           <Link href='/carriere'>Carriére</Link>
           <Link href='/contact'>Démarche</Link>
-          <Link href='/demarche'>Contact</Link>
+          <Link href='/demarche'>Contact</Link>{' '}
+        </div>{' '}
+        <button className='btn__search' onClick={() => setsearch(!search)}>
+          <AiOutlineSearch />
+        </button>
+        <div className={`${search ? 'search-box actives' : 'search-box'}`}>
+          <input type='search' name id placeholder='search here...' />
         </div>
         <div className='responsive'>
           <Image

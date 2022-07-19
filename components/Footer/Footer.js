@@ -3,8 +3,7 @@ import Coordonnées from './Coordonnées';
 
 const Footer = () => {
   return (
-    <>
-      <Coordonnées />
+    
       <footer>
         <div className='footer-1'>
           <div>
@@ -35,17 +34,17 @@ const Footer = () => {
             <input placeholder='Adresse mail' type='text' />
             <button className='second-btn'>Envoyer</button>
           </div>
-          <div className='icons'>
+          {/* <div className='icons'>
             <div className='facebook'>
               <img src='/img/facebook_icone_b.webp' alt='Facebook' />
             </div>
             <img src='/img/twiter_icone_b.webp' alt='Twiter' />
             <img src='/img/youtube_icone_b.webp' alt='Youtube' />
             <img src='/img/linkidin_icone_b.webp' alt='Linkidin' />
-          </div>
+          </div> */}
         </div>
       </footer>
-    </>
+
   );
 };
 

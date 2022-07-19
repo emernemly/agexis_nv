@@ -6,7 +6,7 @@ import {
 import Link from 'next/link';
 const ImgComarison = () => {
   return (
-    <section className='allcomparision'>
+    <section className='allcomparision grey'>
       <div className='container'>
         {' '}
         <h2 className='heading-2'>Réferences</h2>
@@ -16,40 +16,42 @@ const ImgComarison = () => {
             <ReactCompareSlider
               itemOne={
                 <ReactCompareSliderImage
-                  src='/img/Bend--min.webp'
+                  src='/img/references/Complexe-sportif-Clamart.jpg'
                   alt='Image one'
                 />
               }
               itemTwo={
                 <ReactCompareSliderImage
-                  src='/img/iStock-min.webp'
+                  src='/img/references/complexe-after.jpg'
                   alt='Image two'
                 />
               }
             />
+            <p className='title-ref'>Complexe sportif – Clamart</p>
           </div>
           <div className='comparision' data-aos='zoom-in'>
             <ReactCompareSlider
               itemOne={
                 <ReactCompareSliderImage
-                  src='/img/Bend--min.webp'
+                  src='/img/references/Vigneux-Sur-Seine-avant.jpg'
                   alt='Image one'
                 />
               }
               itemTwo={
                 <ReactCompareSliderImage
-                  src='/img/iStock-min.webp'
+                  src='/img/references/Vigneux-Sur-Seine-apres.jpg'
                   alt='Image two'
                 />
               }
             />
+            <p className='title-ref'>68 logements et 20 foyers</p>
           </div>
         </div>
         <br />
       </div>{' '}
       <Link href='/'>
         <div>
-          <button className='primary-btn '>Lire la suite {'>'}</button>{' '}
+          <button className='primary-btn '>Voir plus</button>{' '}
         </div>
       </Link>
     </section>

@@ -11,40 +11,11 @@ import Image from 'next/image';
 const Expertise = () => {
   return (
     <section className='expertise_container '>
-      <div className='container_expertise container ' data-aos='fade-right'>
-        <div className='images'>
-          <div className='bg'>
-            <Image className='roue' src={roue_expertise} alt='roue_expertise' />
-          </div>
-
-          <div className='up'>
-            {' '}
-            <div className='img'>
-              <Image src={expertise_pic_up} alt='expertise_pic_up' />
-            </div>
-            <div className='Num projects'>
-              <h4>250</h4> <p>Porjets réalisés</p>
-            </div>
-          </div>
-          <div className='down'>
-            {' '}
-            <div className='Num employes'>
-              <h4>75</h4> <p>Employés</p>
-            </div>{' '}
-            <div className='img'>
-              <Image
-                src={expertise_pic_down}
-                alt='expertise_pic_down'
-                layout='responsive'
-              />
-            </div>
-          </div>
-        </div>
-        <div className='expertise'>
+      <div className='container_expertise container row' data-aos='fade-right'>
+      <h2 className='heading-2'>Nos Expertises</h2>
+        <div className='expertise col-xs-12 col-md-6'>
           <div className='discreption'>
-            <div>
-              <h2 className='heading-2'>Nos Expertises</h2>
-            </div>
+            
             <p>
               De la définition du process jusqu'a la livraison des
               batiments.nous mettons nos connaissances et nos compétences a
@@ -95,6 +66,36 @@ const Expertise = () => {
                   batiments,nous mettons nos connaissances
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className='images col-xs-12 col-md-6'>
+        
+
+            <img className='img-roue' src="img/roue_expertise-min.webp" alt='roue_expertise' />
+         
+          
+
+          <div className='up'>
+            {' '}
+            <div className='img'>
+              <Image src={expertise_pic_up} alt='expertise_pic_up' />
+            </div>
+            <div className='Num projects'>
+              <h4>250</h4> <p>Porjets réalisés</p>
+            </div>
+          </div>
+          <div className='down'>
+            {' '}
+            <div className='Num employes'>
+              <h4>75</h4> <p>Employés</p>
+            </div>{' '}
+            <div className='img'>
+              <Image
+                src={expertise_pic_down}
+                alt='expertise_pic_down'
+                layout='responsive'
+              />
             </div>
           </div>
         </div>

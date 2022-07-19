@@ -15,9 +15,12 @@ import '../styles/Coordonnées.scss';
 import '../styles/Footer.scss';
 import '../styles/Information.scss';
 import '../styles/Introduction.scss';
+import '../styles/ValeurHome.scss';
 import '../styles/qsmStyle/Présentation.scss';
 import '../styles/qsmStyle/NosValeurs.scss';
 import '../styles/qsmStyle/NotreDémarche.scss';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../components/HomeComponent/Header';
 
@@ -29,7 +32,7 @@ import Footer from '../components/Footer/Footer';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    Aos.init({ duration: 1000 });
+    Aos.init({ duration: 1500 });
   }, []);
   return (
     <>

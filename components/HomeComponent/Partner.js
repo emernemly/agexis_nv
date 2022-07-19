@@ -25,7 +25,7 @@ const Partner = () => {
         <div className='partner-item'>
           <Image src={Parc} alt='Parc' />
         </div>
-        <div className='partner-item'>
+        <div className='partner-item igs'>
           <Image src={ISG} alt='IGS' />
         </div>
         <div className='partner-item'>

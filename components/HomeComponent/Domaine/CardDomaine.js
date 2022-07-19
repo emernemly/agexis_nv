@@ -11,17 +11,17 @@ const CardDomaine = ({ domaine }) => {
         <Image src={domaine.image} alt={domaine.image} />
         <Card.Body>
           <Card.Title>
-            <h4>{domaine.title}</h4>
+            <h3>{domaine.title}</h3>
           </Card.Title>
 
-          <ul className='card-text'>
+          <div className='card-text'>
             {domaine.description.map((el, index) => {
-              return <li key={index}> {el} </li>;
+              return <p key={index}> {el} </p>;
             })}
-          </ul>
-          <button className='primary-btn' variant='primary'>
-            Lire la suite {'>'}
-          </button>
+          </div>
+          {/* <button className='primary-btn' variant='primary'>
+            Lire la suite
+          </button> */}
         </Card.Body>
       </Card>
     </div>

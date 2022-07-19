@@ -1,41 +1,43 @@
 .expertise_container {
   overflow: hidden;
   .container_expertise {
-    display: flex;
+ 
     align-items: center;
-    flex-direction: row;
-    gap: 100px;
+ 
     .images {
-      width: 50%;
       position: relative;
       height: fit-content;
-      .bg {
+
+      .img-roue{
         position: absolute;
+    left: 0;
+    height: 120%;
+  
+    transform: translateX(-50%);
+    top: -10%;
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
 
-        left: 0;
-        top: -7%;
-        transform: translateY(-50%);
-        -webkit-animation-name: spin;
-        -webkit-animation-duration: 4000ms;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
-        -moz-animation-name: spin;
-        -moz-animation-duration: 4000ms;
-        -moz-animation-iteration-count: infinite;
-        -moz-animation-timing-function: linear;
-        -ms-animation-name: spin;
-        -ms-animation-duration: 4000ms;
-        -ms-animation-iteration-count: infinite;
-        -ms-animation-timing-function: linear;
-
-        animation-name: spin;
-        animation-duration: 50000ms;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        img {
-          height: auto;
-        }
-        width: 100%;
+    animation-name: spin;
+    animation-duration: 50000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+      
+      .animation {
+       
+    
+        
       }
       // .updown {
       //   display: flex;
@@ -77,7 +79,7 @@
     }
 
     .expertise {
-      width: 50%;
+      padding-left: 30px;
     }
     .discreption {
       .title {
@@ -101,11 +103,14 @@
 
       .type {
         display: flex;
-        margin: 20px 0;
+      margin-top: 15px;
         align-items: center;
         .svg-content {
           text-align: center;
           width: 100px;
+        }
+        h3{
+          font-size: 22px;
         }
 
         .définition {
@@ -147,21 +152,7 @@
   }
 }
 @media screen and (max-width: 1199px) {
-  .expertise_container {
-    .container_expertise {
-      flex-direction: column-reverse !important;
-      align-items: center;
-      .images {
-        width: 100% !important;
-      }
-      .expertise {
-        width: 100%;
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-      }
-    }
-  }
+  
 }
 @media screen and (max-width: 638px) {
   .container_expertise {

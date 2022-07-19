@@ -1,0 +1,64 @@
+.icons_value {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    font-size: 40px;
+  }
+}
+.expertise_container {
+  .container_expertise {
+    .type-expetise {
+      .type {
+        .définitions {
+          flex: 1;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+.icons-value:first-child {
+}
+.colorHand {
+  color: #1d97d0;
+}
+.colorlight {
+  color: #f48422;
+}
+.colorreg {
+  color: var(--clr-second);
+}
+.coloren {
+  color: #23c812;
+}
+@media screen and (max-width: 600px) {
+  .valeur_home {
+    .container_expertise {
+      .type-expetise {
+        .type {
+          display: flex;
+          margin-top: 15px;
+          align-items: center;
+          flex-direction: column;
+          margin: 12px;
+        }
+        .définitions {
+          flex: 1 1;
+          margin-left: 20px;
+          margin: 12px 0;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

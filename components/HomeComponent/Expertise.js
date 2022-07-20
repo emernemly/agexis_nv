@@ -10,12 +10,12 @@ import Travers from '../../public/img/travers.webp';
 import Image from 'next/image';
 const Expertise = () => {
   return (
-    <section className='expertise_container '>
+    <section className='expertise_container my-4'>
       <div className='container_expertise container row' data-aos='fade-right'>
-      <h2 className='heading-2'>Nos Expertises</h2>
         <div className='expertise col-xs-12 col-md-6'>
+          {' '}
+          <h2 className='heading-2'>Nos Expertises</h2>
           <div className='discreption'>
-            
             <p>
               De la définition du process jusqu'a la livraison des
               batiments.nous mettons nos connaissances et nos compétences a
@@ -70,11 +70,11 @@ const Expertise = () => {
           </div>
         </div>
         <div className='images col-xs-12 col-md-6'>
-        
-
-            <img className='img-roue' src="img/roue_expertise-min.webp" alt='roue_expertise' />
-         
-          
+          <img
+            className='img-roue'
+            src='img/roue_expertise-min.webp'
+            alt='roue_expertise'
+          />
 
           <div className='up'>
             {' '}

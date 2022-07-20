@@ -25,7 +25,6 @@ const Introduction = () => {
                   à une entreprise à taille humaine.
                 </p>{' '}
                 <p>
-                 
                   On met à disposition de ses Maîtres d’Ouvrage des solutions
                   techniques performantes de conception et de réalisation
                   globale de leurs projets tant sur la partie technique,

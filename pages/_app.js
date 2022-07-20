@@ -23,7 +23,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../components/HomeComponent/Header';
-
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';

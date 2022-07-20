@@ -1,4 +1,7 @@
 .domaine {
+  .back_icon {
+    width: 1200px !important;
+  }
   display: flex !important;
   width: 100% !important;
   position: relative;
@@ -9,8 +12,8 @@
   img {
     pointer-events: none;
   }
-  .card-title{
-    h3{
+  .card-title {
+    h3 {
       font-size: 20px;
     }
   }
@@ -18,17 +21,10 @@
     display: flex;
     flex-direction: column;
     .card-text {
-      p{
+      p {
         font-size: 17px;
       }
     }
-  }
-  button {
-   margin-left: auto;
-    height: 40px;
-     display:flex;
-     align-items: center;
-    width: fit-content;
   }
 
   ul {
@@ -45,8 +41,6 @@
 }
 
 .all_carousel {
-
-
   .rec-arrow:hover,
   .rec-arrow:focus {
     background: #d5d5d5 !important;

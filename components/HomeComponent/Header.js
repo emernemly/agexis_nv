@@ -78,7 +78,11 @@ const Header = () => {
             <Offcanvas.Title style={{ color: 'white' }}>Menu</Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <div className=' sidebar-items'>
+            <div className='sidebar-items'>
+              {' '}
+              <div className='search-boxSideBar'>
+                <input type='search' placeholder='search here...' />
+              </div>
               <Link href='/'>
                 <a
                   className={router.pathname == '/' ? 'active' : ''}
@@ -140,7 +144,7 @@ const Header = () => {
           <AiOutlineSearch />
         </button>
         <div className={`${search ? 'search-box actives' : 'search-box'}`}>
-          <input type='search' name id placeholder='search here...' />
+          <input type='search' placeholder='search here...' />
         </div>
         <div className='responsive'>
           <Image

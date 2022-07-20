@@ -56,7 +56,12 @@ function Domaine() {
     };
   }, []);
   return (
-    <section className='grey mt-5'>
+    <section className='domaine grey'>
+      <img
+        className='back_icon'
+        src='/img/architectural_background_new.webp'
+        alt=''
+      />
       <div className='all_carousel container' data-aos='fade-up'>
         <h2 className='heading-2'>Domaines D'interventions</h2>
         <br />

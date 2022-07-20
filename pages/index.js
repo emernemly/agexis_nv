@@ -15,7 +15,7 @@ import ValeurHome from '../components/HomeComponent/ValeurHome';
 export default function Home() {
   return (
     <div className='_home'>
-      {' '}
+      {/* <div className='background'></div> */}
       <Head>
         <title>Agexis</title>
       </Head>

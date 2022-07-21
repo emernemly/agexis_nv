@@ -99,6 +99,18 @@
     }
   }
 }
+@media screen and (max-width: 450px) {
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    background-color: transparent;
+  }
+  .carousel-control-next-icon:hover {
+    background-color: #65676a;
+  }
+  .carousel-control-prev-icon:hover {
+    background-color: #65676a;
+  }
+}
 @media screen and (max-width: 425px) {
   .carousel-slider {
     width: 100%;

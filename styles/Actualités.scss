@@ -100,3 +100,14 @@
     }
   }
 }
+@media screen and (max-width: 357px) {
+  .actualites {
+    .Actualites-contant {
+      .info {
+        svg {
+          display: none !important;
+        }
+      }
+    }
+  }
+}

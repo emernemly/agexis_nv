@@ -56,7 +56,7 @@ function Domaine() {
     };
   }, []);
   return (
-    <section className='domaine grey'>
+    <section className='domaines grey'>
       <img
         className='back_icon'
         src='/img/architectural_background_new.webp'

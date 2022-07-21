@@ -87,48 +87,6 @@
   }
 }
 
-@media screen and (max-width: 450px) {
-  .domaine {
-    height: 542px;
-    button {
-      width: 170px;
-    }
-  }
-  .all_carousel {
-    .title {
-      text-align: start;
-      justify-content: flex-start;
-      h2 {
-        font-size: 37px;
-        margin: 0 0 0 12px;
-      }
-    }
-  }
-}
-@media screen and (max-width: 400px) {
-  .domaine {
-    .card-body {
-      .card-title {
-        h4 {
-          font-size: 17px;
-        }
-      }
-    }
-    .card-text {
-      font-size: 12px;
-    }
-  }
-}
-@media screen and (max-width: 350px) {
-  .all_carousel {
-    .title {
-      h2 {
-        font-size: 25px;
-      }
-    }
-  }
-}
-
 // .rec-arrow:disabled,
 // .rec-arrow[disabled] {
 //   display: none;

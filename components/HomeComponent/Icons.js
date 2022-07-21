@@ -24,39 +24,39 @@ function Icons() {
             </div>
             <h3>Gestion de Projet</h3>
           </Col> */}
-          <Col className='icon' xs={12} sm={6} md={2}>
+          <Col className='icon' xs={12} sm={4} md={2}>
             <div className='icons-expertise str'>
-              <Image src={transport} />
+              <Image src={transport} alt='transport' />
             </div>
             <h3>Structure</h3>
           </Col>
-          <Col className='icon' xs={12} sm={6} md={2}>
+          <Col className='icon' xs={12} sm={4} md={2}>
             <div className='icons-expertise elec'>
-              <Image src={energie_eco} />
+              <Image src={energie_eco} alt='energie eco' />
             </div>
 
             <h3>Électricité</h3>
           </Col>
 
-          <Col className='icon' xs={12} sm={6} md={2}>
+          <Col className='icon' xs={12} sm={4} md={2}>
             {/* <div className='icons-expertise'>
               <Image src={chouf_froid_a} />
             </div>
             <h3>Thermique et Fluide</h3> */}
             <div className='icons-expertise fluide'>
-              <Image src={fluid} />
+              <Image src={fluid} alt='fluid' />
             </div>
             <h3> Fluide</h3>
           </Col>
-          <Col className='icon' xs={12} sm={6} md={2}>
+          <Col className='icon' xs={12} sm={4} md={2}>
             <div className='icons-expertise therm'>
-              <Image src={thermique} />
+              <Image src={thermique} alt='thermique' />
             </div>
             <h3>Thermique</h3>
           </Col>
-          <Col className='icon' xs={12} sm={6} md={2}>
+          <Col className='icon' xs={12} sm={4} md={2}>
             <div className='icons-expertise vrd'>
-              <Image src={route} />
+              <Image src={route} alt='route' />
             </div>
             <h3>VRD</h3>
           </Col>

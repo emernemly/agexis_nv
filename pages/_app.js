@@ -31,8 +31,15 @@ import Footer from '../components/Footer/Footer';
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
-    Aos.init({ duration: 1500 });
+    Aos.init({
+      duration: 1500,
+      disable: function () {
+        var maxWidth = 800;
+        return window.innerWidth < maxWidth;
+      },
+    });
   }, []);
+
   return (
     <>
       <ScrollUp />

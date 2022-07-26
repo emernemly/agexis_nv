@@ -14,6 +14,7 @@ import { AiOutlineSearch } from 'react-icons/ai';
 import { BsList } from 'react-icons/bs';
 import LogoWhite from '../../public/img/logo_agexis_blanc.webp';
 import { useRouter } from 'next/router';
+import { useRef } from 'react';
 const Header = () => {
   const [show, setShow] = useState(false);
 
@@ -21,6 +22,7 @@ const Header = () => {
   const handleShow = () => setShow(true);
   const [hidden, sethidden] = useState(false);
   const [search, setsearch] = useState(false);
+  const searchRef = useRef();
   useEffect(() => {
     const element = document.querySelector('.header');
     const nav = document.querySelector('.header-nav');
@@ -33,6 +35,15 @@ const Header = () => {
         nav.classList.remove('nav-opacity');
       }
     });
+    const closeSearch = (e) => {
+      if (!searchRef.current.contains(e.target)) {
+        setsearch(false);
+      }
+    };
+    document.addEventListener('mousedown', closeSearch);
+    return () => {
+      document.removeEventListener('mousedown', closeSearch);
+    };
   }, []);
   const router = useRouter();
   return (
@@ -144,7 +155,7 @@ const Header = () => {
           <AiOutlineSearch />
         </button>
         <div className={`${search ? 'search-box actives' : 'search-box'}`}>
-          <input type='search' placeholder='search here...' />
+          <input ref={searchRef} type='search' placeholder='search here...' />
         </div>
         <div className='responsive'>
           <Image

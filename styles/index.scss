@@ -110,12 +110,11 @@ button:active {
 }
 
 .second-btn {
-  background-color: var(--clr-second);
-  color: white;
-  font-size: clamp(14px, 4vw, 22px);
-  padding: 10px 20px;
-  border-radius: 10px;
-  text-align: center;
+  background-color: var(--clr-second) !important;
+  color: white !important;
+  padding: 10px 19px !important;
+  border-radius: 10px !important;
+  font-size: clamp(10px, 2vw, 27px) !important;
 }
 
 .heading-2 {

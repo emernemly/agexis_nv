@@ -15,57 +15,52 @@ const Partner = () => {
     { width: 1200, itemsToShow: 4 },
   ];
   return (
-    <>
-      <div className='container my-3'>
-        <h2 className='heading-2'>NOS PARTENAIRES</h2>
-      </div>
-      <div className='slider'>
-        <div className='slide-track'>
-          <div className='slide'>
-            <Image src={Paris} alt='Paris' />
-          </div>
-          <div className='slide'>
-            <Image src={Parc} alt='Parc' />
-          </div>
-          <div className='slide igs'>
-            <Image src={ISG} alt='ISG' />
-          </div>
-          <div className='slide '>
-            <Image src={Opera} alt='Opera' />
-          </div>
-          <div className='slide'>
-            <Image src={dvd} alt='dvd' />
-          </div>
-          <div className='slide'>
-            <Image src={bnf} alt='bnf' />
-          </div>
-          <div className='slide '>
-            <Image src={RitzParis} alt='RitzParis' />
-          </div>
-          <div className='slide'>
-            <Image src={Paris} alt='Paris' />
-          </div>
-          <div className='slide'>
-            <Image src={Parc} alt='Parc' />
-          </div>
-          <div className='slide igs'>
-            <Image src={ISG} alt='ISG' />
-          </div>
-          <div className='slide '>
-            <Image src={Opera} alt='Opera' />
-          </div>
-          <div className='slide'>
-            <Image src={dvd} alt='dvd' />
-          </div>
-          <div className='slide'>
-            <Image src={bnf} alt='bnf' />
-          </div>
-          <div className='slide '>
-            <Image src={RitzParis} alt='RitzParis' />
-          </div>
+    <div className='slider_partner'>
+      <div className='slide-track'>
+        <div className='slide'>
+          <Image src={Paris} alt='Paris' />
+        </div>
+        <div className='slide'>
+          <Image src={Parc} alt='Parc' />
+        </div>
+        <div className='slide igs'>
+          <Image src={ISG} alt='ISG' />
+        </div>
+        <div className='slide '>
+          <Image src={Opera} alt='Opera' />
+        </div>
+        <div className='slide'>
+          <Image src={dvd} alt='dvd' />
+        </div>
+        <div className='slide'>
+          <Image src={bnf} alt='bnf' />
+        </div>
+        <div className='slide '>
+          <Image src={RitzParis} alt='RitzParis' />
+        </div>
+        <div className='slide'>
+          <Image src={Paris} alt='Paris' />
+        </div>
+        <div className='slide'>
+          <Image src={Parc} alt='Parc' />
+        </div>
+        <div className='slide igs'>
+          <Image src={ISG} alt='ISG' />
+        </div>
+        <div className='slide '>
+          <Image src={Opera} alt='Opera' />
+        </div>
+        <div className='slide'>
+          <Image src={dvd} alt='dvd' />
+        </div>
+        <div className='slide'>
+          <Image src={bnf} alt='bnf' />
+        </div>
+        <div className='slide '>
+          <Image src={RitzParis} alt='RitzParis' />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
